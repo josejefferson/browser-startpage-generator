@@ -1,0 +1,17 @@
+.custom-file-label {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.custom-file-label::after {
+	content: "\F76F";
+	font-family: "Material Design Icons";
+}
+
+.pcr-button:after {
+	border: #000 2px solid;
+}
+
+.hidden {
+	display: none !important;
+}
