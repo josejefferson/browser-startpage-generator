@@ -1,2 +1,4 @@
-# sites-launcher-generator
-Crie seu próprio lançador de sites para a página inicial do seu navegador
+# Sites Launcher Generator
+Contador de inscritos para YouTube personalizável
+
+* [Clique aqui para iniciar](https://josejefferson.github.io/sites-launcher-generator/)
