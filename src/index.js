@@ -16,6 +16,24 @@ const bgColor = Pickr.create({
 	}
 });
 
+const textColor = Pickr.create({
+	el: '#text-color-picker',
+	theme: 'nano',
+	default: '#FFFFFF',
+	comparison: true,
+	components: {
+		preview: true,
+		hue: true,
+		interaction: {
+			input: true,
+			save: true
+		}
+	},
+	strings: {
+		save: 'Salvar'
+	}
+});
+
 $('.app-add').click(() => {
 	$('.app-add').before(appModel);
 });
@@ -62,8 +80,9 @@ function makeStartPage() {
 
 	let appsGen = `var apps = ${JSON.stringify(apps)}`;
 	let bg = bgColor.getColor().toHEXA().toString();
+	let tcolor = textColor.getColor().toHEXA().toString();
 
-	zip.file('index.html', generateHTML(appsGen, bg));
+	zip.file('index.html', generateHTML(appsGen, bg, tcolor));
 	zip.generateAsync({ type: 'blob' })
 		.then(content => {
 			let url = window.URL.createObjectURL(content);
