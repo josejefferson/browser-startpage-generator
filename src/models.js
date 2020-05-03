@@ -9,7 +9,7 @@ var appModel = `
 				<div class="custom-file">
 					<input type="file" class="custom-file-input app-picture"
 						accept=".png,.jpg,.jpeg,.gif,.svg,.webp" required>
-					<label class="custom-file-label">Imagem...</label>
+					<label class="custom-file-label">Ícone...</label>
 				</div>
 				<button class="btn btn-danger mt-3 app-delete"><i class="mdi mdi-delete"></i> Remover</button>
 			</div>
