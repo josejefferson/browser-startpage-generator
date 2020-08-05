@@ -8,7 +8,7 @@
 	<meta name="description" content="Crie seu próprio lançador de sites para a página inicial do seu navegador">
 	<meta name="author" content="Jefferson Dantas">
 	<meta name="keywords" content="launcher, generator, pagina incial, startpage">
-	
+
 	<!-- Facebook OpenGraph -->
 	<meta name="og:locale" content="pt_BR">
 	<meta name="og:title" content="Browser Launcher Generator">
@@ -20,18 +20,17 @@
 	<meta name="og:image:type" content="image/png">
 	<meta name="og:image:width" content="1280">
 	<meta name="og:image:height" content="720">
-	
+
 	<!-- Twitter Cards -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Browser Launcher Generator">
 	<meta name="twitter:description" content="Crie seu próprio lançador de sites para a página inicial do seu navegador">
 	<meta name="twitter:url" content="https://josejefferson.github.io/browser-launcher-generator/">
 	<meta name="twitter:image" content="https://josejefferson.github.io/browser-launcher-generator/src/background.png">
-	
+
 	<title>Browser Launcher Generator</title>
 	<link rel="shortcut icon" href="favicon.png" type="image/png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.7.95/css/materialdesignicons.min.css">
 	<link rel="stylesheet" href="src/index.css">
@@ -41,20 +40,19 @@
 	<div class="text-right">
 		<a href="help" target="_blank" title="Ajuda" class="mdi mdi-help-circle mr-2 text-secondary" id="help"></a>
 	</div>
-	
+
 	<div class="container my-3">
 		<h1 class="text-center mb-4">Browser Launcher Generator</h1>
 		<div class="row apps">
 			<div class="col-sm-12 col-md-4 col-lg-3 py-2 app-item">
 				<div class="card h-100">
 					<div class="card-body">
-						<div class="form-group"><input type="text" class="form-control app-name" placeholder="Nome..."
-								required></div>
-						<div class="form-group"><input type="url" class="form-control app-url" placeholder="URL..."
-								required></div>
+						<div class="form-group"><input type="text" class="form-control app-name" placeholder="Nome..." required>
+						</div>
+						<div class="form-group"><input type="url" class="form-control app-url" placeholder="URL..." required></div>
 						<div class="custom-file">
-							<input type="file" class="custom-file-input app-picture"
-								accept=".png,.jpg,.jpeg,.gif,.svg,.webp" required>
+							<input type="file" class="custom-file-input app-picture" accept=".png,.jpg,.jpeg,.gif,.svg,.webp"
+								required>
 							<label class="custom-file-label">Ícone...</label>
 						</div>
 						<button class="btn btn-danger mt-3 app-delete"><i class="mdi mdi-delete"></i> Remover</button>
@@ -75,10 +73,16 @@
 
 		<div class="row my-3">
 			<div class="col text-center">
-				<i class="mdi mdi-palette"></i> Cor de fundo <span id="bg-color-picker"></span>
+				<i class="mdi mdi-palette"></i> Cor de fundo
+				<div class="text-center">
+					<input type="color" class="form-control" name="bgColor" id="bgColor" value="#1C1C1C">
+				</div>
 			</div>
 			<div class="col text-center">
-				<i class="mdi mdi-palette"></i> Cor do texto <span id="text-color-picker"></span>
+				<i class="mdi mdi-palette"></i> Cor do texto
+				<div class="text-center">
+					<input type="color" class="form-control" name="textColor" id="textColor" value="#FFFFFF">
+				</div>
 			</div>
 		</div>
 
@@ -92,7 +96,6 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jszip@3.4.0/dist/jszip.min.js"></script>
 	<script src="src/models.js"></script>
 	<script src="src/index.js"></script>

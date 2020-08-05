@@ -12,8 +12,16 @@
 	font-family: "Material Design Icons";
 }
 
-.pcr-button:after {
-	border: #000 2px solid;
+input[type=color].form-control {
+	display: inline-block;
+	padding: 3px 5px;
+	text-align: center;
+	width: calc(1.5em + .75rem + 2px);
+}
+
+input[type=color].form-control::-webkit-color-swatch {
+	border: gray 1px solid;
+	border-radius: 2px;
 }
 
 .hidden {
