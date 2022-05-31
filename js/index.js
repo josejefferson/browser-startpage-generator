@@ -50,13 +50,13 @@ function makeStartPage() {
 	zip.generateAsync({ type: 'blob' })
 		.then(content => {
 			const url = window.URL.createObjectURL(content)
-			$('.download').attr({ 'href': url, 'download': 'sites-launcher.zip' }).removeClass('hidden')
+			$('.download').attr({ 'href': url, 'download': 'browser-startpage.zip' }).removeClass('hidden')
 
 			let dlink = document.createElement('a')
 			document.body.appendChild(dlink)
 			dlink.style = 'display: none'
 			dlink.href = url
-			dlink.download = 'browser-launcher.zip'
+			dlink.download = 'browser-startpage.zip'
 			dlink.click()
 		})
 }
